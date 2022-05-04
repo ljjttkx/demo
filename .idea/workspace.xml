@@ -34,8 +34,8 @@
       <file leaf-file-name="keys.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web_keys/keys.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+            <state relative-caret-position="83">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -72,8 +72,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="118" />
-    <option name="y" value="57" />
+    <option name="x" value="1041" />
+    <option name="y" value="118" />
     <option name="width" value="741" />
     <option name="height" value="453" />
   </component>
@@ -238,20 +238,27 @@
       <option name="project" value="LOCAL" />
       <updated>1651655300590</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test提交">
+      <created>1651657759533</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651657759533</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.47296205" side_tool="true" visible="true" weight="0.56149733" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" visible="true" weight="0.315508" />
-      <window_info anchor="bottom" id="Python Console" order="3" weight="0.32976827" />
+      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.6400323" weight="0.37254903" />
+      <window_info anchor="bottom" id="Python Console" order="3" sideWeight="0.49959645" weight="0.32976827" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.375" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.29227942" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.71472394" visible="true" weight="0.19935432" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="4" sideWeight="0.5270379" visible="true" weight="0.56149733" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.71472394" visible="true" weight="0.19935432" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="SciView" order="0" />
@@ -300,10 +307,36 @@
           <value>
             <State>
               <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
+                <collection>
+                  <UserGroup>
+                    <option name="users">
+                      <list>
+                        <option value="ljjttkx" />
+                      </list>
+                    </option>
+                  </UserGroup>
+                </collection>
               </option>
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="ljjttkx" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
               </option>
               <option name="COLUMN_ORDER">
                 <list>
@@ -446,8 +479,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web_keys/keys.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+        <state relative-caret-position="83">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
