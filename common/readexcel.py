@@ -1,5 +1,6 @@
 import os
 import openpyxl
+from openpyxl.styles import *
 
 
 from web_keys.keys import Key
@@ -31,14 +32,18 @@ for f in os.listdir(data_path):
         # sheetname = wb['Sheet1']
         for name in wb.sheetnames:
             sheet = wb[name]
+            max_row = sheet.max_row
+
             print("*********************{}*********************".format(name))
             for values in sheet.values:
+                rows = max_row - 1
                 if type(values[0]) is int:
                     print("正在执行操作步骤{}:  {}".format(values[1], values[3]))
 
                     # 操作步骤关联参数
                     data = get_data(values[2])
                     print(data)
+                    print(sheet.max_row)
 
 
                     # （优化后弃用）当excel为多参数时，判断为none的参数清理
@@ -51,9 +56,22 @@ for f in os.listdir(data_path):
                     # 1.实例化key 对象
                     if values[1] == 'open_browser':
                         key = Key(**data)
+                    elif 'assert' in values[1]:
+                        status = getattr(key, values[1])(**data)
+                        if status:
+                            sheet.cell(row=rows, column=5).value = 'PASS'
+                            sheet.cell.fill = PatternFill(fill_type='solid', fgColor="FF00FF00")
+                            wb.save(path)
+                        else:
+                            cel = sheet.cell(row=rows, column=5)
+                            cel.fill = PatternFill(fill_type='solid', fgColor="FFFF0000")
+                            cel.value = 'FAIL'
+                            wb.save(path)
+
                     else:
                         if data is not None:
                             getattr(key, values[1])(**data)
                         else:
                             getattr(key, values[1])()
+
 
